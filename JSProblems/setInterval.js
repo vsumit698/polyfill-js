@@ -66,5 +66,5 @@ setTimeout(()=>{
 
 /*
   Learning 
-  1. In setTimeInterval next interval/next timeout will be set once current interval/current timeout callback function invoked.
+  1. In setInterval next interval/next timeout will be set once current interval/current timeout callback function invoked.
 */
