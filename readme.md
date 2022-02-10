@@ -1,7 +1,7 @@
 # Polyfills/JavaScript implementation  List -
 
 ## Function Polyfills - 
-1. Implement Function.bind using call/apply 
+1. Implement Function.bind using call/apply **(DONE)**
 1. Implement Function.apply using call **(DONE)**
 1. Implement Function.call using apply **(DONE)**
 
