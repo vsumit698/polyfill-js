@@ -27,7 +27,7 @@
 1. Implement the pipe() polyfill
 1. Implement the compose() polyfill
 ## JS Problems - 
-1. Implement SetInterval Polyfill using setTimeout 
+1. Implement SetInterval Polyfill using setTimeout **(DONE)**
 1. Implement debounce 
 1. Implement throttle 
 1. Write a function memoize(memo) that will subsequent calls to a function 
