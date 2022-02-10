@@ -14,7 +14,7 @@
   * Handle the case, clearInterval func can also be invoked in the callback function.
   * After completing the thought process of how to create one setInterval, now think of
     1. For clearInterval func, how using only interval id as argument we can clear the interval, its true we need current timeout id but, we know it gets changed as we are setting up current timeout for next interval.
-    2. So here it seems clearInterval func should be in same scope with setInterval func as we need its current timeout id to clear interval.
+    2. It seems clearInterval func should be in same scope with setInterval func as we need its current timeout id to clear interval.
     3. Also think how how we can create multiple intervals using setInterval func. To handle multiple intervals we need map where key (interval id) and value (current timeout id).
   * Now setInterval, clearInterval to have in same scope we need wrapper function, in above solution setIntervalUtils is that wrapper function.
   * In setIntervalUtils wrapper function we create idtoTimeoutIdMap, uniqueId which now available to both mySetInterval, myClearInterval function.
@@ -66,5 +66,5 @@ setTimeout(()=>{
 
 /*
   Learning 
-  1. In setInterval next interval/next timeout will be set once current interval/current timeout callback function invoked.
+  1. In setInterval next timeout will be set once current timeout callback function invoked.
 */
