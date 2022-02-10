@@ -22,7 +22,7 @@
 */
 
 // Code
-const setIntervalUtils = function(){
+const setIntervalUtils = (function(){
 
   let idtoTimeoutIdMap = {}, uniqueId=0;
 
@@ -50,10 +50,10 @@ const setIntervalUtils = function(){
 
   return {mySetInterval, myClearInterval};
 
-}
+})();
 
 // testing functionality
-const {mySetInterval, myClearInterval} = setIntervalUtils();
+const {mySetInterval, myClearInterval} = setIntervalUtils;
 
 const cbFunc = function(...args){
   console.log(...args);
