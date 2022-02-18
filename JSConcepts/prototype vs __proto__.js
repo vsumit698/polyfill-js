@@ -30,5 +30,5 @@ console.log(new B());
 
   Conclusion
   1. prototype is object in function which is referenced in newly created object at __proto__ key.
-  2. Inside any object, __proto__ is key points to another object prototype from which its created. Hence its purpose is to fulfill inheritance.
+  2. Inside any object, __proto__ is key which points to another object prototype from which its created. Hence its purpose is to fulfill inheritance.
 */
