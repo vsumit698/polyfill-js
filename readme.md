@@ -47,5 +47,5 @@
 
 
 ## Refer sites
-  * JS Vault
-  * javascriptinterviewquestions
+  * bigfrontend.dev
+  * jsvault.com
