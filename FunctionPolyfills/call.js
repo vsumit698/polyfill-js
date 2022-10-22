@@ -6,8 +6,8 @@
 */
 
 // Code
-Function.prototype.myCall = function(thisObj,...restParams){
-  this.apply(thisObj,restParams);
+Function.prototype.myCall = function(thisObj){
+  this.apply(thisObj, Array.prototype.slice.apply(arguments,[1]));
 }
 /* Problem Statement
 

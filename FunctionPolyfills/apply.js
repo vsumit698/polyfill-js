@@ -4,8 +4,8 @@
 */
 
 //Code
-Function.prototype.myApply = function(thisObj,...restParams){
-  this.call(thisObj,...restParams);
+Function.prototype.myApply = function(thisObj, argsArr){
+  this.call(thisObj,...argsArr);
 }
 
 /* Problem Statement -

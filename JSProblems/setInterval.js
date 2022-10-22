@@ -26,8 +26,8 @@ const setIntervalUtils = (function(){
 
   let idtoTimeoutIdMap = {}, uniqueId=0;
 
-  const mySetInterval = function(callback, delay=0, ...rest){
-
+  const mySetInterval = function(callback, delay=0){
+    const argsArr = Array.prototype.slice.call(arguments, 2);
     if(typeof callback !== "function"){
       throw Error("callback is expected to be function");
     }
@@ -35,7 +35,7 @@ const setIntervalUtils = (function(){
     const setCurrTimeout = function(){
       idtoTimeoutIdMap[intervalId] = setTimeout(function(){
         setCurrTimeout();
-        callback(...rest);
+        callback.apply(window, argsArr);
       }, delay);
     }
     setCurrTimeout();
@@ -55,8 +55,8 @@ const setIntervalUtils = (function(){
 // testing functionality
 const {mySetInterval, myClearInterval} = setIntervalUtils;
 
-const cbFunc = function(...args){
-  console.log(...args);
+const cbFunc = function(){
+  console.log(arguments);
 }
 let id = mySetInterval(cbFunc,1000,1,2,3);
 setTimeout(()=>{
