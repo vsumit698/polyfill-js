@@ -14,14 +14,13 @@
 1. Array.flat method (that will flatten an array into a 1D array) Array Prototype
 
 ## Promise Polyfills / Async Helpers
+1. Implement Promisify, provide promise support to function perform asynchronous tasks
 1. Implement Async.sequence, which chains up async functions, like what pipe() does
 1. Implement Async.parallel, which executes a set of async tasks parallelly
-1. Implement Async.series, which executes a set of async tasks in series
 3. Write a method that will implement Promise.all
 4. Write a method that will implement Promise.race
 5. Write a method that will implement Promise.finally
 6. Write a method that will implement Promise.any
-1. Implement Promisify, provide promise support to function perform asynchronous tasks
 7. Implement Promise class
 
 ## Functional Programming
