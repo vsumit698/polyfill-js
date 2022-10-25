@@ -1,10 +1,12 @@
 
 // problem link - https://bigfrontend.dev/problem/implement-Array-prototype-map
 
-/* Thought Process - 
+/* Approach & its Thought Process - 
+
+  * Iterate each item of array. For each item invoke callback function with its required arguments and store its return value to resultArr. 
+
   array (on which map function invoked)
   resultArr (array which has to be returned)
-
   
   1. Callback argument has to be of "function" type
   2. Callback should be invoked only if the index is present in array.
