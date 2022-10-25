@@ -6,7 +6,7 @@
 1. Implement Function.prototype.call using apply **(DONE)**
 
 ## Array Polyfills - 
-1. Array.prototype.map method on Array prototype
+1. Array.prototype.map method on Array prototype **(DONE)**
 1. Array.prototype.filter method on the Array Prototype
 1. Array.prototype.find method on the Array Prototype
 1. Array.prototype.forEach method on the Array Prototype
