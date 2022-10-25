@@ -1,17 +1,17 @@
 # Polyfills/JavaScript Custom Implementation  List -
 
 ## Function Polyfills - 
-1. Implement Function.bind using call/apply **(DONE)**
-1. Implement Function.apply using call **(DONE)**
-1. Implement Function.call using apply **(DONE)**
+1. Implement Function.prototype.bind using call/apply **(DONE)**
+1. Implement Function.prototype.apply using call **(DONE)**
+1. Implement Function.prototype.call using apply **(DONE)**
 
 ## Array Polyfills - 
-1. Array.map method on Array prototype
-1. Array.filter method on the Array Prototype
-1. Array.find method on the Array Prototype
-1. Array.forEach method on the Array Prototype
-1. Array.reduce method on the Array Prototype
-1. Array.flat method (that will flatten an array into a 1D array) Array Prototype
+1. Array.prototype.map method on Array prototype
+1. Array.prototype.filter method on the Array Prototype
+1. Array.prototype.find method on the Array Prototype
+1. Array.prototype.forEach method on the Array Prototype
+1. Array.prototype.reduce method on the Array Prototype
+1. Array.prototype.flat method (that will flatten an array into a 1D array) Array Prototype
 
 ## Promise Polyfills / Async Helpers
 1. Implement Promisify, provide promise support to function perform asynchronous tasks
