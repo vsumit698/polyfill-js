@@ -19,19 +19,19 @@ Array.prototype.myMap = function(callback, thisArg) {
   if(typeof callback !== "function"){
     throw Error("callback is expected to function type");
   }
-  let boundedFun = callback, arrLen = this.length, resultArr = new Array(arrLen);
+  var boundedFun = callback, arrLen = this.length, resultArr = new Array(arrLen);
   boundedFun = callback.bind(thisArg);
-  for(let id=0;arrLen>id;id++){
+  for(var id=0;arrLen>id;id++){
     if(id in this) resultArr[id] = boundedFun(this[id],id,this);
   }
   return resultArr;
 }
 
 // Testing Functionality
-const arr = [1,2,3];
-const arr2 = [1,2,3];
+var arr = [1,2,3];
+var arr2 = [1,2,3];
 
-const callback = (item, i, array) => {
+var callback = function(item, i, array){
   array.push(55);
   return item;
 }
